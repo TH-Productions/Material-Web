@@ -1,0 +1,391 @@
+
+html *
+{
+   font-family: 'Roboto', sans-serif !important;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
+
+footer{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: rgba(67, 170, 139, 1);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
+}
+
+p#total{
+    color: white;
+    text-align: center;
+}
+
+
+.header{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    
+    background-color:  rgba(67, 170, 139, 1);
+    padding-top: 100px;
+    padding-bottom: 40px;
+    margin: 0;
+}
+
+.center{
+    padding-top: 40px;
+    border-radius: 20px;
+    margin: auto;
+    padding-left: 10px;
+}
+
+.centerMe{
+    margin: auto;
+    width: 50%;
+}
+.separator{
+    
+    padding-bottom: 100px;
+    border: 0;
+    border-top-style: solid;
+    border-color: rgba(67, 170, 139, 0.3);
+    border-width: 2px;
+    
+}
+
+.separator2{
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    border: 0;
+    padding-bottom: 0px;
+    border-top-style: solid;
+    border-color: rgba(67, 170, 139, 0.3);
+    border-width: 2px;
+    opacity: 1;
+
+}
+
+
+.chartscore{
+    display: table;
+    max-width: 400px;
+    height: 10px;
+    width: 0%;
+    background: rgba(255, 111, 89, 1);
+    margin-bottom: 40px;
+    border-radius: 50px;
+    text-align: center;
+    opacity: 1;
+    
+}
+.chartbase{
+    max-width: 800px;
+    width: 100%;
+    background-color: rgba(178, 176, 155, 0.3);
+    border-radius: 50px;
+}
+
+#chart {
+    padding-left: 5px;
+    padding-right: 5px;    
+    transition: width 2s, max-width 2s, background-color 2s;
+  }
+
+@-webkit-keyframes hide {
+    from  {height: 220px;}
+    to {height: 55px;opacity: 0; visibility: hidden}
+  
+  }
+
+@keyframes hide {
+    from  {height: 220px;}
+    to {height: 55px;opacity: 0; visibility: hidden}
+  }
+
+@-webkit-keyframes show {
+    from  {height: 55px;opacity: 0;}
+    to {height: 220px;opacity: 1; visibility: visible}
+
+}
+
+@keyframes show {
+    from  {height: 55px;opacity: 0;}
+    to {height: 220px;opacity: 1; visibility: visible}
+  }
+
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(67, 170, 139, 1);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .menu{
+    background-size:cover; 
+    width: 100%; 
+    margin: auto; 
+    background-color: rgba(67, 170, 139, 1);
+  }
+  .menuButton{
+    padding: 10px;
+    font-size:40px;
+    cursor: pointer;
+    color: white;
+    display: none; 
+  }
+  .topMenu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  .topMenu{
+      text-align: center;
+      background-size:cover; 
+      width: 100%;
+      margin: auto; 
+      background-color: rgb(62, 158, 129);
+  }
+  
+.title {
+    color: rgba(15, 39, 61, 1);
+    padding-left: 15px;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+	position: relative;
+}
+.user-input-wrp {
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+	position: relative;
+    padding: 20px 20px 20px 0px;
+    display:table-cell;
+    vertical-align:middle;
+    text-align:left;
+}
+
+#firstRadio{
+    padding-right: 0
+}
+
+.user-input-wrp .inputText{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(15, 39, 61, 1);
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    max-width: 400px;
+    padding: 5px;
+    width: 100%;
+	outline: none;
+    border:none;
+    border-bottom: 1px solid  rgba(67, 170, 139, 1);
+}
+
+.user-input-wrp .inputText:invalid {
+    box-shadow: none !important;
+    color: rgba(219, 80, 74, 1);
+    animation-name:  error; 
+    -webkit-animation-name:  error; 
+    -webkit-animation-duration:  0.5s;
+    animation-duration:  1s;
+}
+
+@-webkit-keyframes error {
+    0%{position: relative;right: 0px;}
+    10%{right: 10px;}
+    20%{right: 0px;}
+    30%{right: 10px;}
+    40%{right: 0px;}
+    50%{right: 10px;}
+    60%{right: 0px;}
+    70%{right: 10px;}
+    80%{right: 0px;}
+    90%{right: 10px;}
+    100%{position: initial;right: 0px;}
+  }
+
+@keyframes error {
+    0%{position: relative;right: 0px;}
+    10%{right: 10px;}
+    20%{right: 0px;}
+    30%{right: 10px;}
+    40%{right: 0px;}
+    50%{right: 10px;}
+    60%{right: 0px;}
+    70%{right: 10px;}
+    80%{right: 0px;}
+    90%{right: 10px;}
+    100%{position: initial;right: 0px;}
+  }
+
+.user-input-wrp .inputText:focus{
+	border-color:  rgba(67, 170, 139, 1);
+	border-width: medium medium 2px;
+}
+.user-input-wrp .floating-label {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(178, 176, 155, 1);
+    font-size: 20px;
+    position: absolute;
+	pointer-events: none;
+	top: 25px;
+	left: 5px;
+	transition: 0.2s ease all;
+}
+
+.user-input-wrp .floating-label-date {
+    font-family: 'Roboto', sans-serif;
+	position: absolute;
+	pointer-events: none;
+    top: -5px;
+    left: 5px;
+	font-size: 15px;
+    opacity: 1;
+    color:  rgba(67, 170, 139, 1);
+}
+
+.user-input-wrp input:focus ~ .floating-label,
+.user-input-wrp input:not(:focus):valid ~ .floating-label{
+    top: 0px;
+    left: 5px;
+	font-size: 15px;
+    opacity: 1;
+    color:  rgba(67, 170, 139, 1);
+}
+
+.radio{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(15, 39, 61, 1);
+    padding-top: 20px;
+    font-size: 20px;
+    padding-bottom: 0px;
+    display: inline
+    
+}
+.form-radio
+{   
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: rgba(178, 176, 155, 1);
+    color: white;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 7px;
+    outline: none;
+    
+}
+.form-radio:checked::before
+{
+    position: absolute;
+    font: 13px/1 'Open Sans', sans-serif;
+    left: 11px;
+    top: 7px;
+    content: '\02143';
+    transform: rotate(40deg);
+}
+.form-radio:hover
+{
+    background-color: rgba(219, 80, 74, 1);
+}
+.form-radio:checked
+{
+    background-color: rgba(255, 111, 89, 1);
+}
+#radioPadding{
+    padding-bottom: 40px;
+}
+
+.button1{
+    border-radius: 25px;
+    min-width: 200px;
+    background-color: rgba(255, 111, 89, 1);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: auto;
+}
+.displayChange{
+    display: inline;
+}
+@media screen and (max-width: 800px) {
+    .center{
+        width: 100%; 
+        padding:40px 0px 0px 0px;
+    }
+    .user-input-wrp{
+        width: 90%;
+        display: block; 
+        text-align: left;
+    }
+    .centerMe{
+        width: 90%;
+    }
+    .topMenu{
+        display: none;
+    }
+    .menuButton{
+        display: inline;
+    }
+    .displayChange{
+        display: ruby
+    }
+    .menu{
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 1;
+    }
+}
+
+

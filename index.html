@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Form</title>
+            <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+        @import url('https://fonts.googleapis.com/css?family=Oswald');
+    </style> 
+    </head>
+    <body>
+       
+        <div class="menu">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+            </div>
+            <span class="menuButton" onclick="openNav()">&#9776; 
+            </span>
+            <div class="">
+            <div class="topMenu">
+                <a href="#">ABOUT</a>
+                <a href="#">SERVICES</a>
+                <a href="#">CLIENTS</a>
+                <a href="#">CONTACT</a>
+            
+            </div>
+        </div>
+        </div>
+        
+        <div class="header">
+                <h1 style="text-align:center;">CHAMPIONSHIP FORM</h1>
+            
+                <div style="text-align:center;">
+                    <p>Fill the fields</p>
+                </div>
+            </div>
+        <div class="center">
+            <form action="/process_data.php">
+                <div id="radioPadding" class = "centerMe">
+                    <div id="firstRadio" class="user-input-wrp"> 
+                        <span class="floating-label-date">Contest Type</span>
+                        <div class="radio">
+                            <input type="radio" id="dou" class="form-radio" name="contest type" value="double" onclick="show()" checked >
+                            <label for="dou">Double</label>
+                            <div class="displayChange">
+                            <input type="radio" id="ind" class="form-radio" name="contest type" value="individual" onclick="hide()" >
+                            <label for="ind">Individual</label>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <fieldset class="separator2" id = "separator2">
+                    <legend class="title" id="contestant1">
+                        CONTESTANT 1
+                    </legend>
+                    <div class = "centerMe">
+                        <div class="user-input-wrp">
+                            <input type="text" id= "fn2" name="firstname" class="inputText" required/>
+                            <label for="fn2" class="floating-label">First name</label>
+                        </div>
+                        <div class="user-input-wrp">
+                            <input type="text" id= "ln2" name="lastname" class="inputText" required>
+                            <label for="ln2" class="floating-label">Last name</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="separator">
+                    <legend class="title" id = "contestant2">
+                        CONTESTANT 2
+                    </legend>
+                    <div class = "centerMe">
+                        <div class="user-input-wrp">
+                            <input type="text" id="fn" name="firstname2" class="inputText" required/>
+                            <label for="fn" class="floating-label">First name</label>
+                            
+                        </div>
+                        <div class="user-input-wrp">
+                            <input type="text" id="ln" name="lastname2" class="inputText" required>
+                            <label for="ln" class="floating-label">Last name</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="separator">
+                    <legend class="title">
+                        CONTEST INFO
+                    </legend>
+                    <div class = "centerMe">
+                        
+                        <div class="user-input-wrp">
+                            <input type="date" id="date" name="date" class="inputText" required>
+                            <label for="date" class="floating-label-date">Contest Date</label>
+                        </div>
+                        <div class="user-input-wrp">
+                            <div class = "radio" id="radio">
+                                <input type="radio" id = "radio1" class="form-radio" name="program type" value="short" checked>
+                                <label for="radio1">Short</label>
+                                <input type="radio"  id = "radio2" class="form-radio" name="program type" value="long" >
+                                <label for="radio2">Long</label>
+                                <div class="floating-label-date">Program type</div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="separator">
+                        <legend class="title">
+                            SCORES
+                        </legend>
+                        <div class = "centerMe">
+                            <div class="user-input-wrp"> 
+                                <input type="number" id="td" class="inputText" max="7" min="0" name="score technical difficulty" step="0.01" placeholder="nº 0-7" oninput="update(document.getElementById('td').value)" />
+                                <label for="td" class="floating-label-date">Technical difficulty</label>
+                            </div>
+                            <div class="user-input-wrp">
+                                <input type="number" id="ex" class="inputText" max="7" min="0" name="score execution" step="0.01" placeholder="nº 0-7" oninput="update(document.getElementById('ex').value)" />
+                                <label for="ex" class="floating-label-date">Execution</label>
+                            </div>
+                            <div class="user-input-wrp">
+                                <input type="number" id="ae" class="inputText" max="7" min="0" name="score aesthetics" step="0.01" placeholder="nº 0-7" oninput="update(document.getElementById('ae').value)" />
+                                <label for="ae" class="floating-label-date">Aesthetics</label>
+                            </div> 
+                        </div>
+                    </fieldset>
+                    <fieldset class="separator">
+                        <legend class="title">
+                            TOTAL SCORE
+                        </legend>
+                        <div class = "centerMe">
+                            <div class = "chartbase">
+                                <div id = "chart" class="chartscore">
+                                    <p id = "total">0</p>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                <div class="centerMe">
+                        
+                    <div class="user-input-wrp">
+                        <input type="submit" class="button1" value="Submit">
+                    </div>
+                </div>
+            </form>       
+        </div>
+     <footer>
+        <p>Contests A Coruña</p>
+        <p>© 2018 www.ContestUDC.com</p>
+    </footer>
+    <script type="text/javascript" src="contest.js"></script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    </body>
+</html>
+ 

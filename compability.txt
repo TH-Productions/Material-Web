@@ -1,0 +1,60 @@
+COLORES
+------------------
+$color1: rgba(15, 39, 61, 1);
+$color2: rgba(219, 80, 74, 1);
+$color3: rgba(255, 111, 89, 1);
+$color4: rgba(67, 170, 139, 1);
+$color5: rgba(178, 176, 155, 1);
+
+COMPATIBLE
+------------------
+    INTERNET EXPLORER 11
+
+    INTERNET EXPLORER 10
+
+    FIREXOX 37
+
+    CHROME 42
+
+    SAFARI 8
+
+    OPERA 29
+
+    INTERNET EXPLORER MOBILE 11
+
+    IOS SAFARI 8 
+
+    ANDROID CHROME 42
+
+    ANDROID FIREXOX 37
+
+
+INCOMPATIBLES 
+------------------
+
+    SAFARI
+        input date puede no funcionar 
+
+    INTERNET EXPLORER 9 
+
+        animation-timing-function
+
+        animation-fill-mode
+
+        transition
+
+    INTERNET EXPLORER 8
+
+        border-radius
+
+        rgba(67,170,139,0,3)
+
+        animation-timing-function
+
+        animation-fill-mode
+
+        transition
+
+        box-shadow
+
+        transform

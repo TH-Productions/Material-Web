@@ -1,0 +1,28 @@
+1) Uso del teclado para poder moverse en la página
+
+2) Todos los campos del formulario tienen su desripción 
+
+3) Los campos que se han rellenado erroneamente tienen tanto un indicador visual como sonoro
+
+4) Uso de palabras y lenguaje claro
+
+5) Un error al escribir es detectado automáticamente
+
+6) No se puede enviar datos erroneos
+
+7) Uso de placeholders para ayudar a saber el tipo de dato a introducir
+
+8) Aquellos elementos con id, lo tienen on nombre único para ellos
+
+9) Al estar con el teclado encima de algún elemento se marca 
+
+10) se puede hacer hasta un 200% de zoom sin perder funcionalidades
+
+11) El color no es usado como único indicativo del formato de la información
+
+12) El formato de visualiación se presenta en bloques 
+
+13) El contenido no depende directamente de la horientación del dispositivo
+
+14) El contenido no requiere de ningún scrolling en dos direcciones, 
+    siempre es de fora vertical
