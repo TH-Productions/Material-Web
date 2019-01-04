@@ -96,7 +96,7 @@ function checkError(valueInit){
     value = parseFloat(valueInit, 10);
 
     if ((value<0)||(value>7)){
-        var snd = new Audio("sounds/dialog-question.ogg")
+        var snd = new Audio("dialog-question.ogg")
         snd.play();
         return;
     }
